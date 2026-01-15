@@ -1,0 +1,8 @@
+{
+  "name": "pchat",
+  "description": "A high-performance, real-time messaging application with AI integration, auto-saving, and offline persistence.",
+  "requestFramePermissions": [
+    "camera",
+    "microphone"
+  ]
+}

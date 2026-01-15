@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>pchat | Private AI Messaging</title>
+    <meta name="description" content="High-performance messaging with AI integration, unique IDs, and secure voice calling.">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="pchat | Private AI Messaging">
+    <meta property="og:description" content="Secure messaging with Gemini AI integration and unique ID system.">
+    
+    <!-- Theme color for mobile browsers -->
+    <meta name="theme-color" content="#002D2D">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script type="importmap">
+    {
+      "imports": {
+        "@google/genai": "https://esm.sh/@google/genai@^1.36.0",
+        "react-dom/": "https://esm.sh/react-dom@^19.2.3/",
+        "react/": "https://esm.sh/react@^19.2.3/",
+        "react": "https://esm.sh/react@^19.2.3"
+      }
+    }
+    </script>
+    <style>
+        /* Smooth scrolling and custom scrollbar for better UX */
+        html { 
+          scroll-behavior: smooth; 
+          height: -webkit-fill-available;
+        }
+        body { 
+          -webkit-tap-highlight-color: transparent;
+          min-height: 100vh;
+          min-height: -webkit-fill-available;
+        }
+        #root {
+          height: 100%;
+        }
+    </style>
+</head>
+<body class="bg-gray-50 text-gray-900 overflow-x-hidden">
+    <div id="root"></div>
+    <script type="module" src="./index.tsx"></script>
+</body>
+</html>
